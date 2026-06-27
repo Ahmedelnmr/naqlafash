@@ -4,32 +4,60 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18206450981"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag(){
+        dataLayer.push(arguments);
+      }
 
       gtag('js', new Date());
 
       gtag('config', 'AW-18206450981');
+
+
+      // Google Ads Conversion Tracking
+      function gtag_report_conversion(url) {
+
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18206450981/82MyCOvEj8UcEKXKwelD',
+          'event_callback': callback
+        });
+
+        return false;
+      }
+
     </script>
 
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- =============================================================
-       أوسمة تحسين محركات البحث (SEO Meta Tags)
-    ============================================================= -->
+
+
     <title>نقل عفش الكويت | شركة نقل عفش واثاث بالكويت فك وتركيب 24 ساعة</title>
+
 
     <meta name="description" content="افضل شركة نقل عفش الكويت تقدم خدمات نقل الاثاث والعفش المنزلي والمكتبي بجميع مناطق الكويت. فك، تركيب، وتغليف بأيدي فنيين محترفين وأرخص الأسعار على مدار 24 ساعة.">
 
+
     <meta name="keywords" content="نقل عفش الكويت, نقل عفش, شركة نقل عفش, نقل اثاث الكويت, فك وتركيب اثاث, نقل عفش رخيص, هاف لوري نقل عفش, نقل عفش حولي, نقل عفش الاحمدي, نقل عفش الفروانية, نقل عفش الجهراء, نقل عفش مبارك الكبير, نقل عفش العاصمة, ونيت نقل عفش, دينا نقل عفش">
 
+
     <meta name="robots" content="index, follow">
-    
+
+
     <!-- Open Graph -->
+
     <meta property="og:title" content="نقل عفش الكويت | شركة نقل عفش واثاث بالكويت فك وتركيب 24 ساعة">
 
     <meta property="og:description" content="افضل شركة نقل عفش الكويت تقدم خدمات نقل الاثاث والعفش بجميع مناطق ومحافظات الكويت بأسعار رخيصة وخبرة طويلة بالفك والتغليف.">
@@ -42,75 +70,28 @@
 
 
     <!-- Font Awesome + CSS -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
 
 
     <!-- Schema.org Local SEO -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "MovingCompany",
         "name": "شركة نقل عفش الكويت المحترفة",
-        "alternateName": "نقل عفش الكويت",
-        "image": "assets/hero-bg.png",
-        "description": "افضل شركة نقل عفش واثاث في الكويت. خدمات فك وتركيب وتغليف لجميع أنواع الأثاث المنزلي والمكتبي بأسعار مناسبة وعلى مدار الساعة.",
         "telephone": "+96596034030",
-        "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Kuwait City",
-            "addressRegion": "Kuwait",
             "addressCountry": "KW"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 29.3759,
-            "longitude": 47.9774
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-        },
-        "areaServed": [
-            {
-                "@type": "AdministrativeArea",
-                "name": "Al Asimah Governorate"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Hawalli Governorate"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Farwaniya Governorate"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Ahmadi Governorate"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Mubarak Al-Kabeer Governorate"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "Jahra Governorate"
-            }
-        ]
+        }
     }
     </script>
+
 
 </head>
 <body>
