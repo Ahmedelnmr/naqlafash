@@ -22,7 +22,3 @@ Or open `index.html` in a browser.
 ## Deploy
 
 Works on any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages).
-
-## Author
-
-Ahmed Elnmr, https://github.com/Ahmedelnmr
